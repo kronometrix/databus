@@ -6,7 +6,7 @@ Many systems cannot send data, directly to Kronometrix. These systems use and pr
 
 A Kronometrix gate, is a data input point, capable to receive, filter and convert native, specific traffic into Kronometrix data, as one or many data messages. There can be different types of gates: MQTT, AviMet, DSS, Feedliner. Each gate is responsible for different type of data traffic.
 
-![Gates](http://www.kronometrix.org/Gates.svg)
+![Gates](http://www.kronometrix.org/gates.svg)
 
 ## Types
 
