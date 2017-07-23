@@ -10,5 +10,12 @@ A Kronometrix gate, is a data input point, capable to receive, filter and conver
 
 ## Types
 
-Currently Kronometrix can proxy data from the following type of systems: Vaisala AviMet, IoT based based systems using DSS, MQTT protocols.
+Currently we support the following type of gate systems: Vaisala AviMet, IoT based based systems using DSS, MQTT protocols. Each gate has it own set of settings and binaries. 
 
+## AviMet Gate
+
+For more information please check AviMet gate, describing all functionality of a AviMet Gate.
+
+## MQTT Gate
+
+Future
