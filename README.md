@@ -8,6 +8,16 @@ A Kronometrix gate, is a data input point, capable to receive, filter and conver
 
 ![Gates](http://www.kronometrix.org/kgte.svg)
 
+
+## Functions
+
+ * A gate does not authenticate requests as Auth module does. It does a simple check on the data received to check a basic regex, or some other condition and if found valid will be formatted in K messages to be send forward to Kronometrix Auth module for authentication.
+
+ * A gate does not validate a SID or TID
+
+ * A gate does not offer any Kronometrix authorization, authentication mechanism
+ 
+
 ## Types
 
 Currently we support the following type of gate systems: Vaisala AviMet, IoT based based systems using DDS, MQTT protocols. Each gate has it own set of settings and binaries. 
