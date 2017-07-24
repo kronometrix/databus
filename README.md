@@ -2,20 +2,26 @@
 
 ## Description
 
-Many systems cannot send data, directly to Kronometrix. These systems use and provide different interfaces and protocols which are incompatible with Kronometrix data message structure. In order to inter-connect wth such systems, Kronometrix is offering the concept of data input gate. 
+Many systems cannot send data, directly to Kronometrix. These systems use and provide different interfaces and protocols which are incompatible with Kronometrix data message structure. In order to inter-connect wth such systems, Kronometrix is offering the concept of data input gate, simple a gate.
 
-A Kronometrix gate, is a data input point, capable to receive, filter and convert native, specific traffic into Kronometrix data, as one or many data messages. There can be different types of gates: MQTT, AviMet, DDS, Feedliner. Each gate is responsible for different type of data traffic.
+A Kronometrix gate, is a data input point, capable to receive, filter and convert native, specific traffic into Kronometrix data, as one or many data messages. There can be different types of gates: MQTT, AviMet, DDS, Feedliner. Each gate is responsible for different type of data traffic, its own validation and convertion. A gate can scale horizontaly, to accomodate more traffic, if required.
 
 ![Gates](http://www.kronometrix.org/kgte.svg)
 
 
 ## Functions
 
- * A gate does not authenticate requests as Auth module does. It does a simple check on the data received to check a basic regex, or some other condition and if found valid will be formatted in K messages to be send forward to Kronometrix Auth module for authentication.
+These are the main functions a gate is offering:
 
- * A gate does not validate a SID or TID
+ * no Kronometrix authentication services are offered. It does a simple check on the data received to check a specific condition, a regex, or some pattern and if found valid will be formatted into valid Kronometrix data message(s)
+ 
+ * as soon as we have a valid Kronometrix data message(s), these will be send forward to Kronometrix Auth module for proper, authentication & authorization
+ 
+ * maintains a status of all requests, for example if one requests has been denied proper authentication
 
- * A gate does not offer any Kronometrix authorization, authentication mechanism
+ * does not validate a Kronometrix SID or TID
+
+ * does not offer any Kronometrix authorization, authentication mechanism
  
 
 ## Types
