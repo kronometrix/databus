@@ -24,9 +24,14 @@ These are the main functions a gate is offering:
  * does not offer any Kronometrix authorization, authentication mechanism
  
 
+## Configuration
+
+A Kronometrix gate has a configuration file, and it has its own set of binaries. For example if we have deployed two types of gates, we should have 2 gate pckages, each with its own configuration file. A configuration file should simple be a text file, which can offer a very basic pattern check mechanism for gate incoming traffic. (kavmet-1.0.1-freebsd10.3-amd64.txz kmqtt-1.0.2-freebsd10.3-amd64.txz)
+
+
 ## Types
 
-Currently we support the following type of gate systems: Vaisala AviMet, IoT based based systems using DDS, MQTT protocols. Each gate has it own set of settings and binaries. 
+Currently we support the following type of gate systems: Vaisala AviMet, IoT based based systems using DDS, MQTT protocols. Each gate has it own set of settings and binaries.
 
 ### AviMet Gate
 
