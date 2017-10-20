@@ -35,4 +35,4 @@ Currently we support the following type of gate systems: Vaisala AviMet, IoT bas
 
 ### AviMet Gate
 
-For more information please check [AviMet repository](https://github.com/kronometrix/avimet), describing all functionality of a Vaisala AviMet gate.
+For more information please check [AvMet repository](https://github.com/kronometrix/avmet), describing all functionality of a Vaisala AviMet gate.
