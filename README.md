@@ -6,7 +6,7 @@ Many systems cannot send data, directly to Kronometrix. These systems use and pr
 
 A Kronometrix databus, is a complete system, capable to receive, filter and convert native, specific traffic into Kronometrix data, as one or many data messages. There can be different types of databuses: MQTT, AviMet, DDS, Feedliner. Each databus is responsible for different type of data traffic, its own validation and convertion. A databus can scale horizontaly, to accomodate more traffic, if required.
 
-![Gates](http://www.kronometrix.org/Databus.svg)
+![databus](http://www.kronometrix.org/Databus.svg)
 
 
 ## Functions
@@ -26,7 +26,7 @@ These are the main functions a databus is offering:
 
 ## Configuration
 
-A Kronometrix databus has a configuration file, and it has its own set of binaries.
+A Kronometrix databus has one or many configuration files, and it has its own set of binaries.
 
 
 ## Types
