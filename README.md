@@ -26,7 +26,7 @@ These are the main functions a databus is offering:
 
 ## Configuration
 
-A Kronometrix databus has a configuration file, and it has its own set of binaries. For example if we have deployed two types of databuses, we should have 2 databus pckages, each with its own configuration file. A configuration file should simple be a text file, which can offer a very basic pattern check mechanism for gate incoming traffic. (kavmet-1.0.1-freebsd10.3-amd64.txz kmqtt-1.0.2-freebsd10.3-amd64.txz)
+A Kronometrix databus has a configuration file, and it has its own set of binaries.
 
 
 ## Types
